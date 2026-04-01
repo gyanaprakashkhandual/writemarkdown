@@ -69,7 +69,7 @@ export default function Navbar() {
           backdrop-blur-xl
           border-b border-neutral-200/60 dark:border-neutral-800/60
           transition-all duration-300
-          ${scrolled ? "shadow-[0_1px_24px_0_rgba(0,0,0,0.06)] dark:shadow-[0_1px_24px_0_rgba(0,0,0,0.4)]" : ""}
+          ${scrolled ? "shadow-[0_1px_1px_0_rgba(0,0,0,0.04)] dark:shadow-[0_1px_1px_0_rgba(0,0,0,0.4)]" : ""}
         `}
       >
         <div className="max-w-6xl mx-auto px-5 sm:px-8">
