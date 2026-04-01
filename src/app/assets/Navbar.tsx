@@ -14,7 +14,7 @@ interface NavLink {
 }
 
 const NAV_LINKS: NavLink[] = [
-  { label: "Editor", href: "/" },
+  { label: "Editor", href: "/editor" },
   { label: "Package", href: "/package" },
   { label: "Extension", href: "/extension" },
   { label: "Docs", href: "/docs" },
@@ -80,9 +80,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.97 }}
               className="flex items-center gap-2.5 shrink-0 group"
             >
-              <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 transition-colors shadow-sm">
-                <FaCoffee className="w-3.5 h-3.5" />
-              </span>
+              <FaCoffee className="w-6 h-6 text-black" />
               <span className="text-[15px] font-semibold text-neutral-900 dark:text-white tracking-[-0.01em]">
                 Write Markdown
               </span>
@@ -99,7 +97,7 @@ export default function Navbar() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.05 * i + 0.15, duration: 0.3 }}
                     className={`
-                      relative px-3.5 py-2 text-[13.5px] font-medium rounded-lg transition-colors duration-150
+                      relative px-3.5 py-2 text-[13.5px] font-semibold rounded-lg transition-colors duration-150
                       ${
                         isActive
                           ? "text-neutral-900 dark:text-white"
@@ -196,13 +194,11 @@ export default function Navbar() {
                 </div>
               )}
 
-              <div className="hidden lg:block w-px h-4 bg-neutral-200 dark:bg-neutral-800 mx-1" />
-
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={() => navigate("/docs")}
-                className="hidden lg:flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-[13px] font-semibold hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors shadow-sm"
+                className="hidden lg:flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-[13px] font-semibold hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
               >
                 Get Started
               </motion.button>
